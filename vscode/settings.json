@@ -1,0 +1,118 @@
+{
+    "git.ignoreMissingGitWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "verilog.linting.linter": "xvlog",
+    "window.zoomLevel": 0,
+    "[verilog]": {},
+    "editor.multiCursorModifier": "alt",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "kite.showWelcomeNotificationOnStartup": false,
+    // easy-motion
+    "vim.easymotion":true,
+    "latex-workshop.latex.tools": [
+        {
+            // 编译工具和命令
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ],
+        },
+        {
+            "name": "pdflatex",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdf->bib->pdf->pdf",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    // 外部sumatraPDF预览
+    "latex-workshop.view.pdf.viewer": "external",
+    "latex-workshop.view.pdf.external.viewer.command": "C:/.../SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.viewer.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"C:/.../Microsoft VS Code/Code.exe\" \"C:/.../Microsoft VS Code/resources/app/out/cli.js\" -gr \"%f\":\"%l\"",
+        "%PDF%"
+    ],
+    // 正向和方向搜索
+    "latex-workshop.view.pdf.external.synctex.command": "C:/.../SumatraPDF.exe",
+    "latex-workshop.view.pdf.external.synctex.args": [
+        "-forward-search",
+        "%TEX%",
+        "%LINE%",
+        "-reuse-instance",
+        "-inverse-search",
+        "\"C:/.../Microsoft VS Code/Code.exe\" \"C:/.../Microsoft VS Code/resources/app/out/cli.js\" -gr \"%f\":\"%l\"",
+        "%PDF%",
+    ],
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "security.workspace.trust.untrustedFiles": "open",
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWxcIixcImN1c3RvbUxpYnJhcmllc1wiOltcIkwuc2NyYXRjaHBhZFwiXSxcInBsdWdpbnNcIjpbXSxcInJlY2VudENvbG9yc1wiOltcIkZGRkZGRlwiXSxcImZvcm1hdFdpZHRoXCI6XCIyNDBcIixcImNyZWF0ZVRhcmdldFwiOmZhbHNlLFwicGFnZUZvcm1hdFwiOntcInhcIjowLFwieVwiOjAsXCJ3aWR0aFwiOjgyNyxcImhlaWdodFwiOjExNjl9LFwic2VhcmNoXCI6dHJ1ZSxcInNob3dTdGFydFNjcmVlblwiOnRydWUsXCJncmlkQ29sb3JcIjpcIiNkMGQwZDBcIixcImRhcmtHcmlkQ29sb3JcIjpcIiM2ZTZlNmVcIixcImF1dG9zYXZlXCI6dHJ1ZSxcInJlc2l6ZUltYWdlc1wiOm51bGwsXCJvcGVuQ291bnRlclwiOjAsXCJ2ZXJzaW9uXCI6MTgsXCJ1bml0XCI6MSxcImlzUnVsZXJPblwiOmZhbHNlLFwidWlcIjpcIlwifSJ9",
+    "editor.lineNumbers": "relative",
+    // "latex-workshop.latex.autoBuild.run": "never",    
+}
